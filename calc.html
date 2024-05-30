@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Link-->
+    <link rel="stylesheet" href="style.css">
+    <!--bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="calc_container m-5 p-2 shadow rounded">
+                <div class="display my-3" id="display"></div>
+                <div class="keys">
+                    <button class="btn btn-light" id="n" onclick="cdisplay(7)">7</button>
+                    <button class="btn btn-light"  onclick="cdisplay(8)">8</button>
+                    <button class="btn btn-light"  onclick="cdisplay(9)">9</button>
+                    <button class="btn btn-light"  onclick="cdisplay('/')">/</button>
+                    <button class="btn btn-light"  onclick="cdisplay(4)">4</button>
+                    <button class="btn btn-light"  onclick="cdisplay(5)">5</button>
+                    <button class="btn btn-light"  onclick="cdisplay(6)">6</button>
+                    <button class="btn btn-light"  onclick="cdisplay('*')">X</button>
+                    <button class="btn btn-light"  onclick="cdisplay(1)">1</button>
+                    <button class="btn btn-light"  onclick="cdisplay(2)">2</button>
+                    <button class="btn btn-light"  onclick="cdisplay(3)">3</button>
+                    <button class="btn btn-light"  onclick="cdisplay('-')">-</button>
+                    <button class=" zero btn btn-light"  onclick="cdisplay(0)">0</button>
+                    <button class="btn btn-light"  onclick="cdisplay('.')">.</button>
+                    <button class="plus btn btn-light"  onclick="cdisplay('+')">+</button>
+                    <button class=" eq btn  btn-success" onclick="equal()">=</button>
+                    <button class="btn btn-danger" onclick="back()">DEL</button>
+                    <button class="btn btn-light" onclick="clearAll()">AC</button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div> 
+</body>
+<script src="./cal.js"></script>
+</html>

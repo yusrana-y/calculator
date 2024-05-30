@@ -1,0 +1,40 @@
+body{
+    overflow-x: hidden;
+    background-image: url(./img/bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.calc_container{
+    border: 1px solid grey;
+}
+
+.display{
+    background-color: white;
+    opacity: .5;
+    height: 4rem;
+    text-align: right;
+    padding-top: 2px;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+    
+}
+
+.btn{
+    height: 4rem;
+}
+
+.eq{
+    grid-column: 1/3;
+    opacity: 0.8;
+}
+
+.zero{
+    grid-column:1/3;
+}
+
+
